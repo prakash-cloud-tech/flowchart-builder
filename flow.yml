@@ -1,0 +1,25 @@
+start: Start
+steps:
+  - id: step1
+    text: Load data
+    next: step2
+
+  - id: step2
+    text: Validate data
+    decision: true
+    yes: step3
+    no: step4
+
+  - id: step3
+    text: Process data
+    next: step5
+
+  - id: step4
+    text: Reject data
+    next: end
+
+  - id: step5
+    text: Save results
+    next: end
+
+end: End
