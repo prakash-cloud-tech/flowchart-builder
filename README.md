@@ -88,7 +88,7 @@ This will generate:
 
 ```
 flowchart.png
-viewer.html
+
 ````
 ## 🌐 View Flowchart
 
