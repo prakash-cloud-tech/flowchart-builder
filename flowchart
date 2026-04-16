@@ -1,0 +1,15 @@
+digraph {
+	graph [nodesep=0.5 rankdir=TB ranksep=0.6]
+	start [label=Start shape=oval]
+	end [label=End shape=oval]
+	step1 [label="Load data" shape=box]
+	step2 [label="Validate data" shape=diamond]
+	step3 [label="Process data" shape=box]
+	step4 [label="Reject data" shape=box]
+	step5 [label="Save results" shape=box]
+	start -> step1
+	step1 -> step2
+	step3 -> step5
+	step4 -> end
+	step5 -> end
+}
